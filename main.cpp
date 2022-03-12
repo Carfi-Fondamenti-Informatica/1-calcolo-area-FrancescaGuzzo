@@ -2,15 +2,19 @@
 using namespace std;
 
 int main(){
-float a, b, c;
+float a=0, b=0, c=0, triangolo=0, quadrato=0, rettangolo=0, trapezio=0;
 cout << "inserire tre valori reali\n";
 cin >> a >> b >> c;
 
-float triangolo=(a*b)/2, quadrato=a*a, rettangolo=a*b, trapezio=((a+b)*c)/2;
-cout << "l'area del triangolo è " << triangolo << endl;
-cout << "l'area del quadrato è " << quadrato << endl;
-cout << "l'area del rettangolo è " << rettangolo << endl;
-cout << "l'area del trapezio è " << trapezio << endl;
+triangolo=(a*b)/2;
+quadrato=a*a;
+rettangolo=a*b;
+trapezio=((a+b)*c)/2;
+
+cout << triangolo << endl;
+cout << quadrato << endl;
+cout << rettangolo << endl;
+cout << trapezio << endl;
 
 return 0;
 }
